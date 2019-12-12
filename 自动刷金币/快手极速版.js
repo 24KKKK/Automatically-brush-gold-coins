@@ -38,7 +38,7 @@ function slideScreen(movieNum, ranNum) {
         }
         if (doubleClickNum == 2) {
             tLog("关注");
-            click(512,1515);
+            click(512, 1515);
             sleep(1000);
         }
         swipe(520, 1600, 520, 0, 500);

@@ -37,14 +37,14 @@ function slideScreenNews(kuaikandianNewsNum) {
         tLog("共：" + kuaikandianNewsNum + "条，此第：" + i + "条");
         // 获取到一条新闻，并点击新闻标题的中心，跳转新闻页
         var titleLocaltion = id("title").findOne().bounds();
-        tLog("获取的新闻："+id("title").findOne().text());
+        tLog("获取的新闻：" + id("title").findOne().text());
         // sleep(2000);
-        if(titleLocaltion.centerY() < 206) {
+        if (titleLocaltion.centerY() < 206) {
             click(titleLocaltion.centerX(), 207);
         } else {
             click(titleLocaltion.centerX(), titleLocaltion.centerY());
         }
-        
+
         sleep(6000);
         // 开始滑动 随机次
         var swipeNum = random(6, 8);

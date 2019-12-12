@@ -31,14 +31,14 @@ function slideScreen(movieNum, ranNum) {
         // 获取随机数1-5，获取到1的时候，双击屏幕
         var doubleClickNum = Math.floor(Math.random() * 5)
         var contationNum = Math.floor(Math.random() * 6)
-        tLog("1点赞：" + doubleClickNum+"           2关注："+contationNum);
+        tLog("1点赞：" + doubleClickNum + "           2关注：" + contationNum);
         // 点赞
         if (doubleClickNum == 1) {
-            click(981,900);
+            click(981, 900);
             sleep(1000);
         }
         // 关注
-        if(contationNum == 2) {
+        if (contationNum == 2) {
             text("关注").findOne().click();
             sleep(1000);
         }
